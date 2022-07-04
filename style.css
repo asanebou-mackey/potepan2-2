@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+
+#calc {
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+}
+
+input {
+    text-align: right;
+}
+
+button {
+    background-color: antiquewhite;
+    padding: 20px;
+}
