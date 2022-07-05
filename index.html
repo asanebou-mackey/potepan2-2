@@ -8,36 +8,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="calc">
-        <div>
-            <input type="text" readonly value="0" id="result">
-            <button onclick=""></button>
-        </div>
-        <div>
-            <button id="btn" onclick="">7</button>
-            <button id="btn" onclick="">8</button>
-            <button id="btn" onclick="">9</button>
-            <button id="btn" onclick="">÷</button>
-        </div>
-        <div>
-            <button id="btn" onclick="">4</button>
-            <button id="btn" onclick="">5</button>
-            <button id="btn" onclick="">6</button>
-            <button id="btn" onclick="">×</button>
-        </div>
-        <div>
-            <button id="btn" onclick="">1</button>
-            <button id="btn" onclick="">2</button>
-            <button id="btn" onclick="">3</button>
-            <button id="btn" onclick="">+</button>
-        </div>
-        <div>
-            <button id="btn" onclick="">0</button>
-            <button id="btn" onclick="">.</button>
-            <button id="btn" onclick="">c</button>
-            <button id="btn" onclick="">=</button>
-        </div>
-    </div>
-    <script src="main.js" charset="utf-8"></script>
+    <table>
+        <tr>
+            <td colspan="4"><input type="text" id="result" value=""></td>
+        </tr>
+        <tr>
+            <td><button value="7" onclick="calc(this)">7</button></td>
+            <td><button value="8" onclick="calc(this)">8</button></td>
+            <td><button value="9" onclick="calc(this)">9</button></td>
+            <td><button id="operator" value="/" onclick="clickOperator(this)">÷</button></td>
+        </tr>
+        <tr>
+            <td><button value="4" onclick="calc(this)">4</button></td>
+            <td><button value="5" onclick="calc(this)">5</button></td>
+            <td><button value="6" onclick="calc(this)">6</button></td>
+            <td><button id="operator" value="*" onclick="clickOperator(this)">×</button></td>
+        </tr>
+        <tr>
+            <td><button value="1" onclick="calc(this)">1</button></td>
+            <td><button value="2" onclick="calc(this)">2</button></td>
+            <td><button value="3" onclick="calc(this)">3</button></td>
+            <td><button id="operator" value="-" onclick="clickOperator(this)">-</button></td>
+        </tr>
+        <tr>
+            <td><button value="0" onclick="calc(this)">0</button></td>
+            <td><button value="c" onclick="calc(this)">c</button></td>
+            <td><button value="=" onclick="calc(this)">=</button></td>
+            <td><button id="operator" value="+" onclick="clickOperator(this)">+</button></td>
+        </tr>
+    </table>
+<script src="main.js" charset="utf-8"></script>
 </body>
 </html>
