@@ -24,35 +24,9 @@ function calc(button) {
 //演算子(+, -, ×, ÷)ボタンを押した時に使う関数
 function clickOperator(button) {
     operator = button.value;
+    if(result.value.slice(-1) =='+' || '-' || '*' || '/') {
+        //console.log('hello');
+        
+    }
     result.value += operator;
 }
-
-
-
-
-
-
-
-
-//<input type="text" id="result" value=""> id="result">< 
-
-/*
-function calc(button) {
-    number = button.innerHTML;
-    if(number == 'c') {
-        result.innerHTML = '0';
-    } else if(number == '=') {
-        result.innerHTML = eval(result.innerHTML);
-    } else {
-        if(result.value == '0') {
-            result.value = number;
-        } else {
-            if(result.innerHTML == '0') {
-                result.innerHTML = number;
-            } else {
-                result.innerHTML += number;
-            }
-        }
-    }
-}
-*/
